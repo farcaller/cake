@@ -48,6 +48,11 @@ let
               version = mkOption {
                 type = types.str;
               };
+              chartHash = mkOption {
+                # XXX: unused. In here for nixhelm compatibility.
+                type = types.str;
+                default = "";
+              };
             };
           });
           default = null;
