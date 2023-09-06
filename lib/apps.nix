@@ -50,8 +50,13 @@ let
               };
               chartHash = mkOption {
                 # XXX: unused. In here for nixhelm compatibility.
-                type = types.str;
-                default = "";
+                type = types.raw;
+                default = null;
+              };
+              bogusVersion = mkOption {
+                # XXX: unused. In here for nixhelm compatibility.
+                type = types.raw;
+                default = null;
               };
             };
           });
