@@ -152,7 +152,7 @@ in
             in
             assert lib.assertMsg
               (
-                (baseAppSpec.kind == "helm" && appSpec.release != null && appSpec.source == null)
+                (baseAppSpec.kind == "helm" && appSpec.release != null && baseAppSpec.source == null)
                 || (baseAppSpec.kind != "helm" && appSpec.release == null)
               ) "apps.${name} must have a release set iff it's a helm app";
             {
