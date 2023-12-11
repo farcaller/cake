@@ -56,7 +56,9 @@ let
         default = { };
         type = types.attrsOf (types.submodule clusterAppsOpts);
       };
-
+      environment = mkOption {
+        type = types.str;
+      };
       _resources = mkOption {
         default = { };
         type = types.attrsOf types.anything;
